@@ -27,8 +27,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">Daily Tasks</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-list"
@@ -43,10 +43,10 @@
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">New Task</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">My Task</a>
                         </li>
                     </ul>
                 </div>
@@ -55,24 +55,26 @@
     </header>
 
     <main>
-        <div class="container">
-            <div>
-                
-            </div>
-            <input type="text" placeholder="Task Name">
-            <form>
-                <select name="task_type">
+        <div class="container-fluid input_box">
+            <h1>New Task</h1>
+            <input type="text" placeholder="Task Name" class="taks_name">
+           
+            <textarea name="task_description" class="task_description" id="task_description" cols="30" rows="10"
+                placeholder="Task Description"></textarea>
+            
+            <div class="task_confirm">
+                <select name="task_type" class="task_type">
                     <option value="">Select a task type</option>
                     <option value="ps5">Important</option>
-                    <option value="xbox">Urgent</option>                    
+                    <option value="xbox">Urgent</option>
                     <option value="nsw">Priority</option>
                     <option value="pcg">Life or Death</option>
                 </select>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
-            </form>
-            
+                </form>
+            <button type="button" class="btn">Confirm</button>
+            </div>
+            <form>         
         </div>
-
     </main>
 
 

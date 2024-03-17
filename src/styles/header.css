@@ -16,3 +16,49 @@ a.nav-link{
     color: white;
 }
 
+.input_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.taks_name {
+    width: 50%;
+    border-radius: 7px;
+}
+
+.task_type{
+    border-radius: 7px;
+}
+
+.task_description{
+    width: 50%;
+    border-radius: 7px;
+}
+
+.task_confirm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    
+}
+
+::placeholder {
+    /* padding-left: 10px; */
+  }
+
+.btn{
+    border: 2px #181818 solid;
+}
+
+input[type=text]{
+    padding-left: 10px;
+}
+
+textarea{
+    padding-left: 10px;
+}
